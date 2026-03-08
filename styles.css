@@ -12,6 +12,7 @@
     --Neutral-100: #f7f3f0;
     --Neutral-600: #6d5b4d;
     --Neutral-900: #2e1401;
+    --Neutral-1000: #000;
     /* Accent Colours */
     --Blue-400: #92adeb;
     --Blue-600: #5072c7;
@@ -20,4 +21,42 @@
     --Pink-700: #e11966;
     --Teal-400: #47d9c9;
     --Yellow-500: #f8cb46;
+}
+
+/* || End */
+
+/* || Main Styling */
+
+body {
+    background-color: var(--Neutral-100);
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+
+/* Mobile View */
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-selector-container {
+    align-items: center;
+    border: 0.1rem solid var(--Neutral-1000);
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.3rem 0.1rem var(--Neutral-1000);
+    display: flex;
+    padding: 0.3rem;
+}
+
+.header-selector-container div {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+.study-mode-selector {
+    background-color: var(--Yellow-500);
+    border: 0.1rem solid var(--Neutral-1000);
+    border-radius: 2rem;
 }
