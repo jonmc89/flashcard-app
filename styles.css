@@ -41,6 +41,10 @@ header {
     justify-content: space-between;
 }
 
+.logo-large {
+    display: none;
+}
+
 .header-selector-container {
     align-items: center;
     border: 0.1rem solid var(--Neutral-1000);
@@ -60,3 +64,34 @@ header {
     border: 0.1rem solid var(--Neutral-1000);
     border-radius: 2rem;
 }
+
+/* || End */
+
+/* || Media Queries */
+
+/* Tablet View */
+
+@media screen and (min-width: 51.25rem) {
+    body {
+        padding: 1.25rem 2rem;
+    }
+
+    /* Header */
+    .logo-small {
+        display: none;
+    }
+
+    .logo-large {
+        display: block;
+    }
+}
+
+/* Desktop View */
+
+@media screen and (min-width: 90rem) {
+    body {
+        padding: 1.5rem 6.25rem;
+    }
+}
+
+/* || End */
