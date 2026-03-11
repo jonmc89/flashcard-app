@@ -122,6 +122,138 @@ header {
     padding: 0.5rem 1rem;
 }
 
+/* Card Section */
+
+.cards-section {
+    border-top: 0.1rem solid var(--Neutral-1000);
+    border-bottom: 0.1rem solid var(--Neutral-1000);
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem 1.5rem;
+}
+
+.current-card {
+    align-items: center;
+    background-color: var(--Pink-400);
+    border: 0.2rem solid var(--Neutral-1000);
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem var(--Neutral-1000);
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 1.2rem;
+    padding: 1.1rem 1rem;
+    position: relative;
+}
+
+.blue-star,
+.yellow-star {
+    position: absolute;
+}
+
+.blue-star {
+    right: 0;
+    transform: translate(-1rem, 2rem);
+}
+
+.yellow-star {
+    left: 0;
+    bottom: 0;
+    transform: translate(2rem, -4rem);
+}
+
+.current-card-content {
+    margin-block-end: 4rem;
+}
+
+.current-card-subject {
+    background-color: var(--Neutral-0);
+    border: 0.1rem solid var(--Neutral-1000);
+    border-radius: 2rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem var(--Neutral-1000);
+    margin-block-end: 5rem;
+    padding: 0.3rem 0.8rem;
+}
+
+.current-card-question {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-block-end: 1rem;
+    text-align: center;
+}
+
+.current-card-reveal {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.card-progress {
+    align-items: center;
+    display: flex;
+}
+
+.progress-bar {
+    background-color: var(--Neutral-0);
+    border: 0.1rem solid var(--Neutral-1000);
+    border-radius: 2rem;
+    height: 0.6rem;
+    margin-inline-end: 1rem;
+    width: 6rem;
+}
+.cards-btns-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.cards-btns-container button {
+    align-items: center;
+    box-shadow: 0.1rem 0.1rem 0.1rem var(--Neutral-1000);
+
+    display: flex;
+    border-radius: 2rem;
+    justify-content: center;
+    padding: 0.8rem 1rem;
+}
+
+button {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+button img {
+    margin-inline-end: 0.5rem;
+}
+
+.i-know-this-btn {
+    background-color: var(--Yellow-500);
+}
+
+/* Next Card Section */
+
+.next-card-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.next-card-container p {
+    color: var(--Neutral-600);
+}
+
+.previous-card,
+.next-card {
+    display: flex;
+    border: 0.1rem solid var(--Neutral-1000);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.previous-card p,
+.next-card p {
+    display: none;
+}
+
 /* || End */
 
 /* || Media Queries */
@@ -152,6 +284,21 @@ header {
         align-items: center;
         flex-direction: row;
         gap: 1rem;
+    }
+
+    .previous-card {
+        border-radius: 2rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .next-card {
+        border-radius: 2rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .previous-card p,
+    .next-card p {
+        display: block;
     }
 }
 
