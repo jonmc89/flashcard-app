@@ -27,6 +27,10 @@
 
 /* || Main Styling */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--Neutral-100);
     font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -74,6 +78,7 @@ header {
     border: 0.1rem solid var(--Neutral-1000);
     border-radius: 2rem;
     box-shadow: 0.2rem 0.3rem 0.1rem var(--Neutral-1000);
+    margin-block-end: 1.5rem;
 }
 
 /*Selection Container */
@@ -252,6 +257,82 @@ button img {
 .previous-card p,
 .next-card p {
     display: none;
+}
+
+/* Stats Section */
+
+.stats-section {
+    border: 0.1rem solid var(--Neutral-1000);
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.3rem 0.1rem var(--Neutral-1000);
+    padding: 1.2rem 1rem;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-block-end: 1rem;
+}
+
+.stats-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.stat-card {
+    align-items: center;
+    border: 0.1rem solid var(--Neutral-1000);
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem var(--Neutral-1000);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 1rem;
+    position: relative;
+}
+
+.stat-card img {
+    transform: translateX(-0.5rem);
+    z-index: 2;
+}
+
+h2 {
+    color: var(--Neutral-600);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.stats-total-number {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.stat-symbol-blue,
+.stat-symbol-green,
+.stat-symbol-red,
+.stat-symbol-pink {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 5rem;
+    z-index: -1;
+}
+
+.stat-symbol-blue {
+    background-color: var(--Blue-400);
+}
+
+.stat-symbol-green {
+    background-color: var(--Teal-400);
+}
+
+.stat-symbol-red {
+    background-color: var(--Pink-500);
+}
+
+.stat-symbol-pink {
+    background-color: var(--Pink-400);
 }
 
 /* || End */
