@@ -265,6 +265,7 @@ button img {
     border: 0.1rem solid var(--Neutral-1000);
     border-radius: 2rem;
     box-shadow: 0.2rem 0.3rem 0.1rem var(--Neutral-1000);
+    margin-block-end: 2.5rem;
     padding: 1.2rem 1rem;
 }
 
@@ -381,6 +382,11 @@ h2 {
     .next-card p {
         display: block;
     }
+
+    .stats-card-container {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    }
 }
 
 /* Desktop View */
@@ -389,6 +395,25 @@ h2 {
     body {
         padding: 1.5rem 6.25rem;
     }
-}
 
+    main {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 3fr 1fr;
+        gap: 2rem;
+    }
+
+    .main-section {
+        min-height: 100%;
+    }
+
+    .stats-card-container {
+        display: flex;
+    }
+
+    .stats-section {
+        min-height: 100%;
+        min-width: 100%;
+    }
+}
 /* || End */
